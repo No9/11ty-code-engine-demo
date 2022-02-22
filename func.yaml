@@ -1,6 +1,8 @@
+version: 0.19.0
 name: 11ty-code-engine-demo
 namespace: ""
 runtime: node
+registry: ""
 image: quay.io/tigerteam/11ty-code-engine-demo:latest
 imageDigest: ""
 builder: gcr.io/paketo-buildpacks/builder:base
@@ -9,12 +11,13 @@ builders:
   default: gcr.io/paketo-buildpacks/builder:base
   full: gcr.io/paketo-buildpacks/builder:full
 buildpacks: []
-healthEndpoints:
-  liveness: /health/liveness
-  readiness: /health/readiness
 volumes: []
 buildEnvs: []
 envs: []
 annotations: {}
 options: {}
 labels: []
+healthEndpoints:
+  liveness: /health/liveness
+  readiness: /health/readiness
+created: 2022-02-22T00:16:27.663246707Z
