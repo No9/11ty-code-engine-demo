@@ -1,7 +1,7 @@
 name: 11ty-code-engine-demo
 namespace: ""
 runtime: node
-image: ""
+image: quay.io/tigerteam/11ty-code-engine-demo:latest
 imageDigest: ""
 builder: gcr.io/paketo-buildpacks/builder:base
 builders:
